@@ -26,13 +26,13 @@ at the final adds the details in the inventory
      --------------------------------------------------------
      Introduce the Product name: Mile                        
      --------------------------------------------------------
-     Product Case added                                      
+     Product Mile added                                      
      Introduce the price of the product: 100000.00           
-     Price of Case added                                     
+     Price of Mile added                                     
      Enter the Product quantity: 1                           
-     Quantity of Case added                                  
+     Quantity of Mile added                                  
      --------------------------------------------------------
-     Product Case added with Price $100.00 and quantity: 1000
+     Product Mile added with Price $10000.00 and quantity: 10
      --------------------------------------------------------
 
 
