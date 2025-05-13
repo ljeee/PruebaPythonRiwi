@@ -27,7 +27,7 @@ def AddProducts(Inventory, Product, Price, Quantity):
             print("------------------------------------------")
         else:
             print("------------------------------------------")
-            print(f"Product {Product.title()} added") 
+            print(f"\033[1;32mProduct {Product.title()} added\033[0m")
             break
     #Looking for a Valid Product Price   
     while True:
@@ -46,7 +46,7 @@ def AddProducts(Inventory, Product, Price, Quantity):
             if Price <= -1:
                 print("\033[1;31mPrice must be greater than 0\033[0m")
             else:
-                print(f"Price of {Product.title()} added")
+                print(f"\033[1;32mPrice of {Product.title()} added\033[0m")
                 break
         else:
             print("\033[1;31mPrice must be a valid number\033[0m")
@@ -65,7 +65,7 @@ def AddProducts(Inventory, Product, Price, Quantity):
             if Quantity <= -1:
                 print("\033[1;31mQuantity must be greater than 0\033[0m")
             else:
-                print(f"Quantity of {Product.title()} added")
+                print(f"\033[1;32mQuantity of {Product.title()} added\033[0m")
                 break
         else:
             print("\033[1;31mQuantity must be a valid numbers\033[0m")
@@ -149,7 +149,7 @@ def UpdateProductInfo():
                         elif ChangeQuantity.isdigit():
                             ChangeQuantity = int(ChangeQuantity)
                             if ChangeQuantity < -1:
-                                print("The quantity cannot be less than 0, or are you giving it away?")
+                                print("\033[1;31mThe quantity cannot be less than 0, or are you giving it away?\033[0m")
                             else:
                                 Inventory[LookForProduct]['Quantity'] = ChangeQuantity
                                 print("------------------------------------------")
@@ -182,7 +182,7 @@ def DelProduct(Inventory):
                 print(f"\33[1;31mProduct {Eliminar.title()} removed\33[0m")
                 break
             elif not Eliminar:
-                print("The name cannot be empty .")
+                print("\033[1;31mThe name cannot be empty\033[0m")
                 print("------------------------------------------")
             else:
                 print(f"\033[1;31mThe product {Eliminar.title()} is not in the inventory\033[0m")
@@ -255,4 +255,3 @@ def Menu():
                 print("\033[1;31mInvalid option, please try again\033[0m")                 
 
 Menu()
-
